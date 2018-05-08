@@ -1,0 +1,47 @@
+{
+  "name": "crypto-props",
+  "description": "Encrypt/decrypt values from given properties of an object",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "test": "standard && nsp check && ava",
+    "test-offline": "standard && ava",
+    "coverage": "nyc ava",
+    "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
+    "standard-fix": "standard --fix",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
+  },
+  "keywords": [
+    "tfk",
+    "telemark",
+    "encrypt",
+    "decrypt"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telemark/crypto-props.git"
+  },
+  "bugs": {
+    "url": "https://github.com/telemark/crypto-props/issues"
+  },
+  "homepage": "https://github.com/telemark/crypto-props#readme",
+  "devDependencies": {
+    "ava": "0.25.0",
+    "coveralls": "3.0.1",
+    "nsp": "3.2.1",
+    "nyc": "11.7.1",
+    "standard": "11.0.1"
+  },
+  "dependencies": {
+    "ow": "0.3.0"
+  }
+}
