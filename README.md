@@ -11,7 +11,7 @@ Encrypt/decrypt values from given properties of an object
 ```JavaScript
 const code = require('crypto-props')
 const data = {
-  id: '123456',
+  id: 123456,
   text: 'Så vakker var aldri natten'
 }
 const encryptOptions = {

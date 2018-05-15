@@ -18,7 +18,7 @@ module.exports = options => {
   }
   props.forEach(key => {
     const cipher = options.method === 'encrypt' ? crypto.createCipher('aes192', options.secret) : crypto.createDecipher('aes192', options.secret)
-    let crypted = cipher.update(options.data[key], input, output)
+    let crypted = cipher.update(options.data[key].toString(), input, output)
     crypted += cipher.final(output)
     data[key] = crypted
   })
