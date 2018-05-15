@@ -6,6 +6,7 @@ const optionsEncrypt = {
   exclude: ['id'],
   data: {
     id: '123456',
+    person: undefined,
     text: 'Så vakker var aldri natten'
   },
   method: 'encrypt'
@@ -15,6 +16,7 @@ const optionsDecrypt = {
   include: ['text'],
   data: {
     id: '123456',
+    person: undefined,
     text: '0ef68df9192603feceff9aa1ada0344c7cd0fa161099a5ba18dc632095516c2f'
   },
   method: 'decrypt'

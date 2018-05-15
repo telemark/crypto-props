@@ -17,10 +17,12 @@ module.exports = options => {
     props = filteredProps
   }
   props.forEach(key => {
-    const cipher = options.method === 'encrypt' ? crypto.createCipher('aes192', options.secret) : crypto.createDecipher('aes192', options.secret)
-    let crypted = cipher.update(options.data[key].toString(), input, output)
-    crypted += cipher.final(output)
-    data[key] = crypted
+    if (options.data[key]) {
+      const cipher = options.method === 'encrypt' ? crypto.createCipher('aes192', options.secret) : crypto.createDecipher('aes192', options.secret)
+      let crypted = cipher.update(options.data[key].toString(), input, output)
+      crypted += cipher.final(output)
+      data[key] = crypted
+    }
   })
   return Object.assign({}, options.data, data)
 }
