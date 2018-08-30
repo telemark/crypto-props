@@ -52,5 +52,3 @@ const options = {
 ## License
 
 [MIT](LICENSE)
-
-![Robohash image of crypto-props](https://robots.kebabstudios.party/minelev-web.png "Robohash image of crypto-props")
