@@ -1,7 +1,7 @@
 {
   "name": "crypto-props",
   "description": "Encrypt/decrypt values from given properties of an object",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "license": "MIT",
   "author": {
     "name": "Geir Gåsodden",
